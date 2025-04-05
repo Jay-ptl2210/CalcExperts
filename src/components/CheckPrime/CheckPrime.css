@@ -1,0 +1,55 @@
+.check-prime {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease;
+}
+
+.check-prime:hover {
+  transform: scale(1.02);
+}
+
+.check-prime h1 {
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 10px;
+}
+
+.check-prime input {
+  margin: 10px;
+  padding: 10px;
+  width: 220px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.check-prime input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.check-prime button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.check-prime button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+.check-prime p {
+  color: #555;
+  font-family: 'Arial', sans-serif;
+}
