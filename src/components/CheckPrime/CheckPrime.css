@@ -1,55 +1,182 @@
 .check-prime {
-  text-align: center;
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #ccc;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  background-color: #f9f9f9;
-  transition: transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-.check-prime:hover {
-  transform: scale(1.02);
-}
-
-.check-prime h1 {
+.check-prime h2 {
   color: #333;
-  font-family: 'Arial', sans-serif;
-  margin-bottom: 10px;
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
-.check-prime input {
-  margin: 10px;
-  padding: 10px;
-  width: 220px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  transition: border-color 0.3s ease;
+.check-prime__instruction {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
 }
 
-.check-prime input:focus {
-  border-color: #007bff;
-  outline: none;
+.check-prime__input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.check-prime button {
+.check-prime__input {
   padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  flex: 1;
+}
+
+.check-prime__button {
+  padding: 10px 20px;
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
+  color: white;
   border: none;
   border-radius: 5px;
-  background-color: #28a745;
-  color: white;
-  font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  width: auto;
+  white-space: nowrap;
 }
 
-.check-prime button:hover {
-  background-color: #218838;
+.check-prime__button:hover {
   transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-.check-prime p {
-  color: #555;
-  font-family: 'Arial', sans-serif;
+.check-prime__result {
+  margin: 20px auto;
+  font-size: 16px;
+  color: #333;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  max-width: 600px;
+}
+
+.check-prime__info {
+  margin-top: 20px;
+  color: #666;
+  font-size: 15px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1366px) {
+  .check-prime {
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .check-prime {
+    max-width: 650px;
+    margin: 35px auto;
+    padding: 28px 25px;
+  }
+  
+  .check-prime__input-container {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .check-prime {
+    margin: 30px auto;
+    padding: 25px 20px;
+  }
+  
+  .check-prime h2 {
+    font-size: 26px;
+  }
+  
+  .check-prime__instruction {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .check-prime {
+    margin: 20px 15px;
+    padding: 20px 15px;
+  }
+  
+  .check-prime h2 {
+    font-size: 24px;
+  }
+  
+  .check-prime__instruction {
+    font-size: 14px;
+  }
+  
+  .check-prime__input {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+  
+  .check-prime__button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  
+  .check-prime__result {
+    font-size: 15px;
+  }
+  
+  .check-prime__info {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .check-prime {
+    padding: 15px 10px;
+  }
+  
+  .check-prime h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  
+  .check-prime__instruction {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+  
+  .check-prime__input {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+  
+  .check-prime__button {
+    font-size: 13px;
+    padding: 8px 14px;
+  }
+  
+  .check-prime__result {
+    font-size: 14px;
+    margin: 15px auto;
+  }
+  
+  .check-prime__info {
+    font-size: 13px;
+    margin-top: 15px;
+  }
 }

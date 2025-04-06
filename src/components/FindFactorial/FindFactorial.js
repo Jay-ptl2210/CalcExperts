@@ -17,17 +17,36 @@ const FindFactorial = () => {
 
   return (
     <div className="find-factorial">
-      <h1>Find Factorial</h1>
-      <p>Enter a number to find its factorial:</p>
-      <input 
-        type="number" 
-        value={number} 
-        onChange={(e) => setNumber(e.target.value)} 
-      />
-      <button onClick={calculateFactorial}>Find Factorial</button>
-      <p>Factorial of  {number} is: {result}</p>
-
-      <p>The factorial of a number is the product of all integers from 1 to that number.</p>
+      <h2>Find Factorial</h2>
+      
+      <p className="find-factorial__instruction">Enter a number to find its factorial:</p>
+      
+      <div className="find-factorial__input-container">
+        <input 
+          type="number" 
+          className="find-factorial__input"
+          placeholder="Enter a number"
+          value={number} 
+          onChange={(e) => setNumber(e.target.value)} 
+        />
+        
+        <button 
+          className="find-factorial__button" 
+          onClick={calculateFactorial}
+        >
+          Calculate
+        </button>
+      </div>
+      
+      {result && (
+        <div className="find-factorial__result">
+          Result: {result}
+        </div>
+      )}
+      
+      <p className="find-factorial__info">
+        The factorial of a non-negative integer n is the product of all positive integers less than or equal to n.
+      </p>
     </div>
   );
 };

@@ -7,29 +7,62 @@ const FindMod = () => {
   const [result, setResult] = useState('');
 
   const calculateMod = () => {
-    setResult(a % b);
+    const numA = parseInt(a);
+    const numB = parseInt(b);
+    
+    if (isNaN(numA) || isNaN(numB)) {
+      setResult('Please enter valid numbers');
+      return;
+    }
+    
+    if (numB === 0) {
+      setResult('Cannot divide by zero');
+      return;
+    }
+    
+    setResult(`${numA} % ${numB} = ${numA % numB}`);
   };
 
   return (
     <div className="find-mod">
-      <h1>Find Modulus</h1>
-      <p>Enter two numbers to find the modulus (a % b):</p>
-      <input 
-        type="number" 
-        value={a} 
-        onChange={(e) => setA(e.target.value)} 
-        placeholder="Enter a" 
-      />
-      <input 
-        type="number" 
-        value={b} 
-        onChange={(e) => setB(e.target.value)} 
-        placeholder="Enter b" 
-      />
-      <button onClick={calculateMod}>Calculate Mod</button>
-      <p className>{a} mod  {b} is: {result}</p>
-
-      <p>The modulus is the remainder when dividing one number by another.</p>
+      <h2>Find Modulus</h2>
+      
+      <p className="find-mod__instruction">Enter two numbers to find the modulus (a % b):</p>
+      
+      <div className="find-mod__input-container">
+        <input 
+          type="number" 
+          className="find-mod__input"
+          placeholder="Enter a"
+          value={a} 
+          onChange={(e) => setA(e.target.value)} 
+        />
+        
+        <input 
+          type="number" 
+          className="find-mod__input"
+          placeholder="Enter b"
+          value={b} 
+          onChange={(e) => setB(e.target.value)} 
+        />
+        
+        <button 
+          className="find-mod__button" 
+          onClick={calculateMod}
+        >
+          Calculate Mod
+        </button>
+      </div>
+      
+      {result && (
+        <div className="find-mod__result">
+          {result}
+        </div>
+      )}
+      
+      <p className="find-mod__info">
+        The modulus is the remainder when dividing one number by another.
+      </p>
     </div>
   );
 };

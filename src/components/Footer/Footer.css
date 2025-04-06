@@ -1,0 +1,21 @@
+/* Add these responsive styles to your Footer.css */
+.footer {
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 15px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 10px;
+    font-size: 12px;
+  }
+}

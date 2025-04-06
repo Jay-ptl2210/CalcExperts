@@ -1,60 +1,96 @@
 .find-mod {
-  text-align: center;
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #ccc;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  background-color: #f9f9f9;
-  transition: transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-.find-mod:hover {
-  transform: scale(1.02);
-}
-
-.find-mod h1 {
+.find-mod h2 {
   color: #333;
-  font-family: 'Arial', sans-serif;
-  margin-bottom: 10px;
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
-.find-mod input {
-  margin: 10px;
-  padding: 10px;
-  width: 220px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  transition: border-color 0.3s ease;
+.find-mod__instruction {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
 }
 
-.find-mod input:focus {
-  border-color: #28a745;
-  outline: none;
+.find-mod__input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.find-mod button {
+.find-mod__input {
   padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 200px; /* Reduced width for two inputs */
+  flex: 0 0 auto;
+}
+
+.find-mod__button {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
   border: none;
   border-radius: 5px;
-  background-color: #28a745;
-  color: white;
-  font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  height: 42px; /* Match input height */
+  white-space: nowrap;
 }
 
-.find-mod button:hover {
-  background-color: #218838;
-  transform: translateY(-2px);
+.find-mod__button:hover {
+  background-color: #45a049;
 }
 
-.find-mod p {
-  color: #555;
-  font-family: 'Arial', sans-serif;
+.find-mod__result {
+  margin: 20px auto;
+  font-size: 16px;
+  color: #333;
 }
 
-.find-mod .result {
-  font-weight: bold;
-  color: #28a745;
+.find-mod__info {
+  margin-top: 20px;
+  color: #666;
+  font-size: 15px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  .find-mod {
+    padding: 20px;
+    margin: 20px 15px;
+  }
+  
+  .find-mod__input-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .find-mod__input {
+    width: 100%;
+    max-width: none;
+  }
+  
+  .find-mod__button {
+    width: 100%;
+  }
 }

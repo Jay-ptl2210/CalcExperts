@@ -53,3 +53,186 @@
   color: #555;
   font-family: 'Arial', sans-serif;
 }
+
+.find-gcd {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.find-gcd h2 {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.find-gcd__instruction {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.find-gcd__input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.find-gcd__input {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  flex: 1;
+}
+
+.find-gcd__button {
+  padding: 10px 20px;
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  width: auto;
+  white-space: nowrap;
+}
+
+/* Add this to your media queries */
+@media screen and (max-width: 576px) {
+  .find-gcd__input-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .find-gcd__button {
+    width: 100%;
+  }
+}
+
+.find-gcd__button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.find-gcd__result {
+  margin: 20px auto;
+  font-size: 16px;
+  color: #333;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  max-width: 600px;
+}
+
+.find-gcd__info {
+  margin-top: 20px;
+  color: #666;
+  font-size: 15px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .find-gcd {
+    margin: 30px auto;
+    padding: 25px 20px;
+  }
+  
+  .find-gcd h2 {
+    font-size: 26px;
+  }
+  
+  .find-gcd__instruction {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .find-gcd {
+    margin: 20px 15px;
+    padding: 20px 15px;
+  }
+  
+  .find-gcd h2 {
+    font-size: 24px;
+  }
+  
+  .find-gcd__instruction {
+    font-size: 14px;
+  }
+  
+  .find-gcd__input {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+  
+  .find-gcd__button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  
+  .find-gcd__result {
+    font-size: 15px;
+  }
+  
+  .find-gcd__info {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .find-gcd {
+    padding: 15px 10px;
+  }
+  
+  .find-gcd h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  
+  .find-gcd__instruction {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+  
+  .find-gcd__input {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+  
+  .find-gcd__button {
+    font-size: 13px;
+    padding: 8px 14px;
+  }
+  
+  .find-gcd__result {
+    font-size: 14px;
+    margin: 15px auto;
+  }
+  
+  .find-gcd__info {
+    font-size: 13px;
+    margin-top: 15px;
+  }
+}
+
+/* Check for any :after or :before pseudo-elements that might be adding copyright text */
+.find-gcd__info:after,
+.find-gcd:after {
+  content: none !important;
+}

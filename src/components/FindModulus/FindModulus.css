@@ -1,0 +1,173 @@
+.modulus-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.modulus-title {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modulus-description {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.modulus-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.modulus-input-group {
+  margin-bottom: 20px;
+}
+
+.modulus-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #444;
+}
+
+.modulus-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.modulus-input:focus {
+  border-color: #4ca1af;
+  outline: none;
+}
+
+.modulus-button {
+  padding: 12px 20px;
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.modulus-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modulus-result {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  font-size: 18px;
+  text-align: center;
+  color: #333;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .modulus-container {
+    margin: 30px auto;
+    padding: 25px 20px;
+  }
+  
+  .modulus-title {
+    font-size: 26px;
+  }
+  
+  .modulus-description {
+    font-size: 15px;
+  }
+  
+  .modulus-input {
+    font-size: 15px;
+  }
+  
+  .modulus-button {
+    font-size: 15px;
+  }
+  
+  .modulus-result {
+    font-size: 15px;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .modulus-container {
+    margin: 20px 15px;
+    padding: 20px 15px;
+  }
+  
+  .modulus-title {
+    font-size: 24px;
+  }
+  
+  .modulus-description {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .modulus-input {
+    font-size: 14px;
+    padding: 10px;
+  }
+  
+  .modulus-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+  
+  .modulus-result {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .modulus-container {
+    padding: 15px 10px;
+  }
+  
+  .modulus-title {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  
+  .modulus-description {
+    font-size: 13px;
+  }
+  
+  .modulus-input {
+    font-size: 13px;
+    padding: 8px;
+  }
+  
+  .modulus-button {
+    font-size: 13px;
+    padding: 8px;
+  }
+  
+  .modulus-result {
+    font-size: 13px;
+    padding: 10px;
+  }
+}
